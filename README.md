@@ -2,9 +2,9 @@
 
 ## 背景
 
-2026/10/20，上游 HMCL 通过 [PR #7017](https://github.com/HMCL-dev/HMCL/pull/7017) 移除了下载并安装游戏本体的功能（详见 Glavo 的 [B站动态](https://www.bilibili.com/opus/1261188623656550402)）。
+2026/10/20，上游 HMCL 通过 [PR #7017](https://github.com/HMCL-dev/HMCL/pull/7017) 移除了在中国大陆下载并安装游戏本体的功能（详见 Glavo 的 [B站动态](https://www.bilibili.com/opus/1261188623656550402)）。
 
-本项目通过 Java Agent 在 HMCL 类加载时改写 `RegionUtils` 的网络地区检测，使其返回 `false`，恢复游戏下载。
+本项目通过 Java Agent 在 HMCL 类加载时改写 `RegionUtils` 的网络地区检测，通过使其总是返回 `false` 恢复游戏下载。
 
 ## 使用
 
